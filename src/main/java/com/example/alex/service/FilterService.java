@@ -75,8 +75,8 @@ public class FilterService {
     public ResponseEntity<Optional<Selected>>getSelectedItem(Long id){
         return ResponseEntity.ok().body(selectedRepository.findById(id));
     }
-//    public void deleteSelected(Long id){
-//       selectedRepository.deleteById(id);
-//    }
+    public void deleteSelected(Long id){
+       selectedRepository.deleteById(id);
+    }
 
 }
