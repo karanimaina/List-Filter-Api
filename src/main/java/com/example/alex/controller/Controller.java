@@ -11,12 +11,12 @@
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/selected")
-//public class Controller{
-//    private final FilterService filterService;
-//    @GetMapping("/get")
-//     ResponseEntity<UniversalResponse>getAllEntities(){
-//        return filterService.getAllSelected();
-//    }
+public class Controller{
+    private final FilterService filterService;
+    @GetMapping("/get")
+     ResponseEntity<UniversalResponse>getAllEntities(){
+        return filterService.getAllSelected();
+    }
 ////    @PostMapping("/add")
 ////    public ResponseEntity<UniversalResponse>  addSelected(@RequestBody Total total){
 //////        return filterService.filter(total);
