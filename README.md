@@ -26,4 +26,4 @@ which are saved into the Postgres database
 
 # Efficiency 
 the operation has a constant time complexity
-The files are then recieved on the outPut  folder 
+The files are then recieved on the outPut  folder  
