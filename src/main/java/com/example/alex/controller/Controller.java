@@ -1,13 +1,11 @@
 package com.example.alex.controller;
 
 import com.example.alex.service.FilterService;
+import com.example.alex.wrappers.Total;
 import com.example.alex.wrappers.UniversalResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequiredArgsConstructor
@@ -18,8 +16,8 @@ public class Controller{
      ResponseEntity<UniversalResponse>getAllEntities(){
         return filterService.getAllSelected();
     }
-    @PostMapping("/add")
-    public ResponseEntity<UniversalResponse>  addSelected(@RequestBody Total total){
-       return filterService.filter(total);
-    }
+//    @PostMapping("/add")
+//    public ResponseEntity<UniversalResponse>  addSelected(@RequestBody Total total){
+//       return filterService.filter(total);
+//    }
 }
