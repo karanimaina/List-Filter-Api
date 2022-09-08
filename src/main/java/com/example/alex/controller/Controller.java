@@ -8,9 +8,9 @@
 //import org.springframework.web.bind.annotation.RequestMapping;
 //import org.springframework.web.bind.annotation.RestController;
 //
-//@RestController
-//@RequiredArgsConstructor
-//@RequestMapping("/selected")
+@RestController
+@RequiredArgsConstructor
+@RequestMapping("/selected")
 //public class Controller{
 //    private final FilterService filterService;
 //    @GetMapping("/get")
