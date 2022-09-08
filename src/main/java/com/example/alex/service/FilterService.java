@@ -69,9 +69,9 @@ public class FilterService {
             });
         }
     }
-//    public ResponseEntity<UniversalResponse>getAllSelected(){
-//        return ResponseEntity.ok().body(UniversalResponse.builder().status(200).message("Data list").data(selectedRepository.findAll()).build());
-//    }
+    public ResponseEntity<UniversalResponse>getAllSelected(){
+        return ResponseEntity.ok().body(UniversalResponse.builder().status(200).message("Data list").data(selectedRepository.findAll()).build());
+    }
 //    public ResponseEntity<Optional<Selected>>getSelectedItem(Long id){
 //        return ResponseEntity.ok().body(selectedRepository.findById(id));
 //    }
