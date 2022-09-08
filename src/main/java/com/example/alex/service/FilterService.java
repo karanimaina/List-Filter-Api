@@ -49,26 +49,26 @@ public class FilterService {
                     });
         }
     }
-//    public void saveData(Total total) {
-//        List<Selected> savedList = new ArrayList<>();
-//        if (total != null) {
-//            total.getResults().forEach(result -> {
-//                Selected selected = Selected.builder()
-//                        .timezone(result.getTz())
-//                        .email(result.getProfile().getEmail())
-//                        .tzLabel(result.getTzLabel())
-//                        .realName(result.getRealName())
-//                        .isOwner(result.getIsOwner())
-//                        .isAdmin(result.getIsAdmin())
-//                        .realNameNormalized(result.getProfile().realNameNormalized)
-//                        .firstName(result.getProfile().firstName)
-//                        .skype(result.getProfile().skype)
-//                        .phone(result.getProfile().getPhone())
-//                        .build();
-//                savedList.add(selectedRepository.save(selected));
-//            });
-//        }
-//    }
+    public void saveData(Total total) {
+        List<Selected> savedList = new ArrayList<>();
+        if (total != null) {
+            total.getResults().forEach(result -> {
+                Selected selected = Selected.builder()
+                        .timezone(result.getTz())
+                        .email(result.getProfile().getEmail())
+                        .tzLabel(result.getTzLabel())
+                        .realName(result.getRealName())
+                        .isOwner(result.getIsOwner())
+                        .isAdmin(result.getIsAdmin())
+                        .realNameNormalized(result.getProfile().realNameNormalized)
+                        .firstName(result.getProfile().firstName)
+                        .skype(result.getProfile().skype)
+                        .phone(result.getProfile().getPhone())
+                        .build();
+                savedList.add(selectedRepository.save(selected));
+            });
+        }
+    }
 //    public ResponseEntity<UniversalResponse>getAllSelected(){
 //        return ResponseEntity.ok().body(UniversalResponse.builder().status(200).message("Data list").data(selectedRepository.findAll()).build());
 //    }
