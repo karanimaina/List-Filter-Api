@@ -22,7 +22,8 @@ the data gets filtered into
     phone;
     skype;
 
-which are saved ino the Postgres database
+which are saved into the Postgres database
 
 # Efficiency 
-the operation takes 2seconds to filter a large chunk of files
+the operation has a constant time complexity
+The files are then recieved on the outPut  folder 
